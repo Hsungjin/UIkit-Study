@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Giants-Bold.otf">
+            <string>Giants-Bold</string>
+        </array>
+        <array key="Recipekorea.ttf">
+            <string>RecipekoreaM</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TouchSchoolUIkitVer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="rUP-d9-U5t">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="터치! 터치!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obf-S8-2Bc">
+                                <rect key="frame" x="67.666666666666686" y="160" width="258" height="77.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Giants-Bold" family="Giants" pointSize="55"/>
+                                <color key="textColor" red="0.96470588450000005" green="0.77647060160000003" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학교대항전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fh-Lk-O6P">
+                                <rect key="frame" x="35.666666666666657" y="253.66666666666666" width="322" height="84.666666666666657"/>
+                                <fontDescription key="fontDescription" name="RecipekoreaM" family="Recipekorea" pointSize="65"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCL-ku-9PB">
+                                <rect key="frame" x="80" y="370.33333333333331" width="233" height="56.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="게임 시작" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" name="Giants-Bold" family="Giants" pointSize="30"/>
+                                    <color key="baseBackgroundColor" red="0.19215688110000001" green="0.44313728810000003" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="8Da-Ex-7Is" kind="presentation" modalPresentationStyle="fullScreen" id="7AI-wm-E1X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qg-Vn-BW4">
+                                <rect key="frame" x="80" y="458.66666666666669" width="233" height="56.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="랭킹 보기" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" name="Giants-Bold" family="Giants" pointSize="30"/>
+                                    <color key="baseBackgroundColor" red="0.9987216592" green="0.76932579280000002" blue="0.21159067749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYF-yt-T1W" kind="presentation" modalPresentationStyle="fullScreen" id="0ep-Pq-OdR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt1-2W-adF">
+                                <rect key="frame" x="80" y="547.33333333333337" width="233" height="56.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="학교 선택" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" name="Giants-Bold" family="Giants" pointSize="30"/>
+                                    <color key="baseBackgroundColor" red="0.047058824450000002" green="0.14901961389999999" blue="0.1019607931" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ftk-2j-X96" kind="presentation" modalPresentationStyle="fullScreen" id="fxN-KZ-gSN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tt1-2W-adF" firstAttribute="top" secondItem="7Qg-Vn-BW4" secondAttribute="bottom" constant="32" id="0gl-tZ-fth"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CCL-ku-9PB" secondAttribute="trailing" constant="80" id="6cC-9M-aDw"/>
+                            <constraint firstItem="7Qg-Vn-BW4" firstAttribute="top" secondItem="CCL-ku-9PB" secondAttribute="bottom" constant="32" id="7re-s5-f27"/>
+                            <constraint firstItem="CCL-ku-9PB" firstAttribute="top" secondItem="8fh-Lk-O6P" secondAttribute="bottom" constant="32" id="B0U-Hr-VLH"/>
+                            <constraint firstItem="obf-S8-2Bc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fvg-5a-E6L"/>
+                            <constraint firstItem="8fh-Lk-O6P" firstAttribute="top" secondItem="obf-S8-2Bc" secondAttribute="bottom" constant="16" id="Hhz-xN-8BY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Qg-Vn-BW4" secondAttribute="trailing" constant="80" id="MEd-2o-UpM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tt1-2W-adF" secondAttribute="trailing" constant="80" id="ZAE-rq-lbf"/>
+                            <constraint firstItem="8fh-Lk-O6P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dmC-tw-aRo"/>
+                            <constraint firstItem="Tt1-2W-adF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="fn5-0K-Gsi"/>
+                            <constraint firstItem="obf-S8-2Bc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="jiG-3y-uxu"/>
+                            <constraint firstItem="CCL-ku-9PB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="mqb-e3-6IE"/>
+                            <constraint firstItem="7Qg-Vn-BW4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="nVq-ZK-eua"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KTb-Rv-bKQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="FK6-dY-Ebn">
+            <objects>
+                <viewController id="8Da-Ex-7Is" customClass="GameViewController" customModule="TouchSchoolUIkitVer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jWJ-jm-ZVH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="UhI-U0-7wK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faF-Y4-Vyr">
+                                <rect key="frame" x="0.0" y="32" width="149" height="97"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vX-no-X8y">
+                                        <rect key="frame" x="49" y="28" width="80" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="돌아가기">
+                                            <fontDescription key="titleFontDescription" name="Giants-Bold" family="Giants" pointSize="15"/>
+                                            <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Glg-Sd-Rtr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLA-eE-LNn">
+                                        <rect key="frame" x="20" y="20" width="42" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                            <fontDescription key="titleFontDescription" name="Giants-Bold" family="Giants" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="nJJ-9V-Xrt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="LPe-ab-BW4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1위 아산고등학교" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7b-BT-Lhx">
+                                <rect key="frame" x="86.666666666666686" y="137.33333333333334" width="220" height="42.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Giants-Bold" family="Giants" pointSize="30"/>
+                                <color key="textColor" red="0.35294118520000001" green="0.76862752440000004" blue="0.74509805439999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFT-ph-wVm">
+                                <rect key="frame" x="182" y="219.66666666666666" width="29" height="63.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Giants-Bold" family="Giants" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eraser" translatesAutoresizingMaskIntoConstraints="NO" id="pLL-wn-U0D">
+                                <rect key="frame" x="120" y="403.33333333333331" width="153" height="114.99999999999994"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏆 1,001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chs-Bm-A9F">
+                                <rect key="frame" x="103.33333333333333" y="638.33333333333337" width="186.33333333333337" height="63.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Giants-Bold" family="Giants" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="agR-9A-rQH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="faF-Y4-Vyr" firstAttribute="leading" secondItem="agR-9A-rQH" secondAttribute="leading" id="7bT-Jf-cJH"/>
+                            <constraint firstItem="UhI-U0-7wK" firstAttribute="top" secondItem="P7b-BT-Lhx" secondAttribute="bottom" constant="-179.5" id="8bw-cg-Xjg"/>
+                            <constraint firstItem="faF-Y4-Vyr" firstAttribute="top" secondItem="jWJ-jm-ZVH" secondAttribute="top" constant="32" id="9lT-co-a2V"/>
+                            <constraint firstItem="UhI-U0-7wK" firstAttribute="top" secondItem="jWJ-jm-ZVH" secondAttribute="top" id="KuE-xi-CGB"/>
+                            <constraint firstItem="pLL-wn-U0D" firstAttribute="leading" secondItem="agR-9A-rQH" secondAttribute="leading" constant="120" id="SFu-Cm-Q3n"/>
+                            <constraint firstItem="agR-9A-rQH" firstAttribute="trailing" secondItem="faF-Y4-Vyr" secondAttribute="trailing" constant="244" id="U36-LP-JlS"/>
+                            <constraint firstItem="pLL-wn-U0D" firstAttribute="top" secondItem="MFT-ph-wVm" secondAttribute="bottom" constant="120" id="VEx-NF-Yfj"/>
+                            <constraint firstItem="MFT-ph-wVm" firstAttribute="centerX" secondItem="jWJ-jm-ZVH" secondAttribute="centerX" id="ZQe-lv-nBa"/>
+                            <constraint firstItem="UhI-U0-7wK" firstAttribute="leading" secondItem="agR-9A-rQH" secondAttribute="leading" id="Zvn-bB-8r0"/>
+                            <constraint firstItem="UhI-U0-7wK" firstAttribute="trailing" secondItem="agR-9A-rQH" secondAttribute="trailing" id="a7R-1g-hSm"/>
+                            <constraint firstItem="agR-9A-rQH" firstAttribute="trailing" secondItem="pLL-wn-U0D" secondAttribute="trailing" constant="120" id="atT-n6-lCM"/>
+                            <constraint firstItem="Chs-Bm-A9F" firstAttribute="top" secondItem="pLL-wn-U0D" secondAttribute="bottom" constant="120" id="cVM-lF-hVP"/>
+                            <constraint firstItem="P7b-BT-Lhx" firstAttribute="centerX" secondItem="jWJ-jm-ZVH" secondAttribute="centerX" id="g3R-bF-Qza"/>
+                            <constraint firstAttribute="bottom" secondItem="UhI-U0-7wK" secondAttribute="bottom" id="h55-XN-cYp"/>
+                            <constraint firstItem="Chs-Bm-A9F" firstAttribute="centerX" secondItem="jWJ-jm-ZVH" secondAttribute="centerX" id="ims-2r-Stw"/>
+                            <constraint firstItem="MFT-ph-wVm" firstAttribute="top" secondItem="P7b-BT-Lhx" secondAttribute="bottom" constant="40" id="vhP-tE-v05"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4rL-Mk-U4x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdG-vp-HXn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="-28"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="KIZ-Uc-qVe">
+            <objects>
+                <viewController id="ftk-2j-X96" customClass="SearchViewController" customModule="TouchSchoolUIkitVer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xgx-rU-uG8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="nme-DN-pUc">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4E-TW-T8X">
+                                <rect key="frame" x="0.0" y="32" width="149" height="97"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwZ-mf-xxK">
+                                        <rect key="frame" x="49" y="28" width="80" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="돌아가기">
+                                            <fontDescription key="titleFontDescription" name="Giants-Bold" family="Giants" pointSize="15"/>
+                                            <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Kvj-BB-auw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGI-xb-ut9">
+                                        <rect key="frame" x="20" y="20" width="42" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                            <fontDescription key="titleFontDescription" name="Giants-Bold" family="Giants" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Pm1-oD-qS8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="R3j-pa-30G"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="G6n-Dw-QZk">
+                                <rect key="frame" x="160" y="290" width="73" height="68.333333333333314"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="aaw-eo-9CO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학교를 검색해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOY-WV-KNb">
+                                <rect key="frame" x="123.66666666666669" y="391" width="146" height="24"/>
+                                <fontDescription key="fontDescription" name="Giants-Bold" family="Giants" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZ4-6h-F7f">
+                                <rect key="frame" x="16" y="106" width="361" height="56"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" barStyle="black" text="검색" translatesAutoresizingMaskIntoConstraints="NO" id="vwN-y3-Udl">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="56"/>
+                                        <color key="barTintColor" red="0.089450187979999998" green="0.28827705980000001" blue="0.20256593819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="ftk-2j-X96" id="e6M-iZ-dDd"/>
+                                        </connections>
+                                    </searchBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgG-LA-CJ5">
+                                        <rect key="frame" x="313" y="16" width="32" height="24"/>
+                                        <fontDescription key="fontDescription" name="Giants-Bold" family="Giants" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="pgG-LA-CJ5" firstAttribute="centerY" secondItem="LZ4-6h-F7f" secondAttribute="centerY" id="BwM-St-Zt5"/>
+                                    <constraint firstAttribute="trailing" secondItem="pgG-LA-CJ5" secondAttribute="trailing" constant="16" id="i6r-xY-GMT"/>
+                                    <constraint firstItem="vwN-y3-Udl" firstAttribute="centerY" secondItem="LZ4-6h-F7f" secondAttribute="centerY" id="kcj-f5-eMN"/>
+                                    <constraint firstItem="pgG-LA-CJ5" firstAttribute="leading" secondItem="vwN-y3-Udl" secondAttribute="trailing" constant="28" id="qC3-0J-6Dh"/>
+                                    <constraint firstAttribute="height" constant="56" id="sbV-c7-FUa"/>
+                                    <constraint firstItem="vwN-y3-Udl" firstAttribute="leading" secondItem="LZ4-6h-F7f" secondAttribute="leading" id="yIO-uk-rQl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gEv-Jb-S4F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G6n-Dw-QZk" firstAttribute="leading" secondItem="gEv-Jb-S4F" secondAttribute="leading" constant="160" id="1ug-H8-YJV"/>
+                            <constraint firstItem="IOY-WV-KNb" firstAttribute="centerX" secondItem="xgx-rU-uG8" secondAttribute="centerX" id="8bQ-QZ-bmB"/>
+                            <constraint firstAttribute="bottom" secondItem="nme-DN-pUc" secondAttribute="bottom" id="93W-Nw-3FQ"/>
+                            <constraint firstItem="nme-DN-pUc" firstAttribute="trailing" secondItem="gEv-Jb-S4F" secondAttribute="trailing" id="BPY-KY-Dir"/>
+                            <constraint firstItem="IOY-WV-KNb" firstAttribute="top" secondItem="G6n-Dw-QZk" secondAttribute="bottom" constant="32" id="FQ1-Uh-YPP"/>
+                            <constraint firstItem="LZ4-6h-F7f" firstAttribute="leading" secondItem="gEv-Jb-S4F" secondAttribute="leading" constant="16" id="HOE-vv-1B2"/>
+                            <constraint firstItem="nme-DN-pUc" firstAttribute="top" secondItem="xgx-rU-uG8" secondAttribute="top" id="LlB-e9-tr6"/>
+                            <constraint firstItem="nme-DN-pUc" firstAttribute="leading" secondItem="gEv-Jb-S4F" secondAttribute="leading" id="MIz-AW-JZU"/>
+                            <constraint firstItem="LZ4-6h-F7f" firstAttribute="top" secondItem="gEv-Jb-S4F" secondAttribute="top" constant="80" id="aqu-3J-DtV"/>
+                            <constraint firstItem="gEv-Jb-S4F" firstAttribute="trailing" secondItem="LZ4-6h-F7f" secondAttribute="trailing" constant="16" id="awc-0W-0mp"/>
+                            <constraint firstItem="gEv-Jb-S4F" firstAttribute="trailing" secondItem="P4E-TW-T8X" secondAttribute="trailing" constant="244" id="bcY-bL-Dya"/>
+                            <constraint firstItem="G6n-Dw-QZk" firstAttribute="top" secondItem="vwN-y3-Udl" secondAttribute="bottom" constant="153" id="fft-5t-dhv"/>
+                            <constraint firstItem="LZ4-6h-F7f" firstAttribute="centerX" secondItem="xgx-rU-uG8" secondAttribute="centerX" id="knm-Kp-DNM"/>
+                            <constraint firstItem="P4E-TW-T8X" firstAttribute="top" secondItem="xgx-rU-uG8" secondAttribute="top" constant="32" id="p1B-fF-d5u"/>
+                            <constraint firstItem="P4E-TW-T8X" firstAttribute="leading" secondItem="gEv-Jb-S4F" secondAttribute="leading" id="qs8-33-HIh"/>
+                            <constraint firstItem="gEv-Jb-S4F" firstAttribute="trailing" secondItem="G6n-Dw-QZk" secondAttribute="trailing" constant="160" id="wVe-CE-K0z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RR3-x8-uWS"/>
+                    <connections>
+                        <outlet property="searchBar" destination="vwN-y3-Udl" id="4fv-zi-8rC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4au-eF-0ui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846.564885496183" y="-28.169014084507044"/>
+        </scene>
+        <!--Rank View Controller-->
+        <scene sceneID="9nV-hh-u4H">
+            <objects>
+                <viewController id="BYF-yt-T1W" customClass="RankViewController" customModule="TouchSchoolUIkitVer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dBP-Nc-qQ1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Lku-Oq-JGR">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hyr-Ey-gmc">
+                                <rect key="frame" x="0.0" y="32" width="149" height="97"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KF-uQ-o8v">
+                                        <rect key="frame" x="49" y="28" width="80" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="돌아가기">
+                                            <fontDescription key="titleFontDescription" name="Giants-Bold" family="Giants" pointSize="15"/>
+                                            <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="NJs-6b-NcO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCK-9O-sEJ">
+                                        <rect key="frame" x="20" y="20" width="42" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                            <fontDescription key="titleFontDescription" name="Giants-Bold" family="Giants" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="DnT-Rt-zg8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="1md-w2-fLh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Sm-zV-Ws0">
+                                <rect key="frame" x="80" y="153" width="233" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="아산고등학교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buV-eA-2cP">
+                                        <rect key="frame" x="33" y="8" width="166" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Giants-Bold" family="Giants" pointSize="30"/>
+                                        <color key="textColor" red="0.35294118520000001" green="0.76862752440000004" blue="0.74509805439999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1위 1,001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZu-71-29G">
+                                        <rect key="frame" x="46" y="69" width="141" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Giants-Bold" family="Giants" pointSize="30"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Y9P-G8-9bd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGD-cS-JWe">
+                                <rect key="frame" x="32" y="305" width="329" height="487"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NzO-y4-xp3">
+                                        <rect key="frame" x="20" y="20" width="288" height="446"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="eLD-vC-RtY"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="CjV-L1-Oat"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="487" id="ucx-Sx-z8J"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TfS-R6-1G0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hyr-Ey-gmc" firstAttribute="top" secondItem="dBP-Nc-qQ1" secondAttribute="top" constant="32" id="8gq-up-fjY"/>
+                            <constraint firstItem="TfS-R6-1G0" firstAttribute="trailing" secondItem="7Sm-zV-Ws0" secondAttribute="trailing" constant="80" id="BVX-N4-Q6Y"/>
+                            <constraint firstItem="Lku-Oq-JGR" firstAttribute="trailing" secondItem="TfS-R6-1G0" secondAttribute="trailing" id="IcK-DN-uaV"/>
+                            <constraint firstItem="sGD-cS-JWe" firstAttribute="leading" secondItem="TfS-R6-1G0" secondAttribute="leading" constant="32" id="SAO-pG-amM"/>
+                            <constraint firstItem="Lku-Oq-JGR" firstAttribute="top" secondItem="dBP-Nc-qQ1" secondAttribute="top" id="Zai-VR-jaJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Lku-Oq-JGR" secondAttribute="bottom" id="aFO-IY-Jse"/>
+                            <constraint firstItem="Hyr-Ey-gmc" firstAttribute="leading" secondItem="TfS-R6-1G0" secondAttribute="leading" id="ddE-An-9hi"/>
+                            <constraint firstItem="TfS-R6-1G0" firstAttribute="trailing" secondItem="sGD-cS-JWe" secondAttribute="trailing" constant="32" id="fNh-jc-xzI"/>
+                            <constraint firstItem="Lku-Oq-JGR" firstAttribute="leading" secondItem="TfS-R6-1G0" secondAttribute="leading" id="hCp-95-aS8"/>
+                            <constraint firstItem="sGD-cS-JWe" firstAttribute="top" secondItem="7Sm-zV-Ws0" secondAttribute="bottom" constant="32" id="hcY-YP-Iuy"/>
+                            <constraint firstItem="7Sm-zV-Ws0" firstAttribute="top" secondItem="Hyr-Ey-gmc" secondAttribute="bottom" constant="24" id="m7p-L4-dN9"/>
+                            <constraint firstItem="TfS-R6-1G0" firstAttribute="trailing" secondItem="Hyr-Ey-gmc" secondAttribute="trailing" constant="244" id="ni5-6s-4M7"/>
+                            <constraint firstItem="7Sm-zV-Ws0" firstAttribute="leading" secondItem="TfS-R6-1G0" secondAttribute="leading" constant="80" id="q9a-NK-EZ7"/>
+                            <constraint firstItem="7Sm-zV-Ws0" firstAttribute="centerX" secondItem="dBP-Nc-qQ1" secondAttribute="centerX" id="vGp-oJ-6BJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YDD-KF-JQ6"/>
+                    <connections>
+                        <outlet property="myScrollView" destination="NzO-y4-xp3" id="Db3-Hw-8TE"/>
+                        <outlet property="myView" destination="7Sm-zV-Ws0" id="PTA-xS-BrC"/>
+                        <outlet property="view2" destination="sGD-cS-JWe" id="Hu3-qb-X8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GjV-GB-dal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2716.7938931297708" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Pm1-oD-qS8"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="backgroundImage" width="1118" height="1727"/>
+        <image name="eraser" width="183" height="115"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
